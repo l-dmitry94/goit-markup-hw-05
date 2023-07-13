@@ -519,6 +519,9 @@ body {
   letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
+.modal__form-block {
+  margin-bottom: 8px;
+}
 .modal__form-label {
   display: block;
   color: var(--lightslate);
