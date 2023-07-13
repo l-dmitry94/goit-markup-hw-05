@@ -32,6 +32,12 @@ img {
   max-width: 100%;
 }
 
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -503,7 +509,27 @@ body {
 .modal__close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.modal__form {
+  padding: 72px 24px 24px;
+}
+.modal__form-fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.modal__form-title {
+  color: var(--navyblue);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+.modal__form-input {
+  width: 100%;
+  display: block;
+}
 .is-hidden {
   opacity: 0;
   visibility: hidden;
