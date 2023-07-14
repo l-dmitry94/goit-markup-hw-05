@@ -608,6 +608,10 @@ body {
         fill: var(--navyblue);
     }
 
+    &__form-textarea-block {
+        margin-bottom: 16px;
+    }
+
     &__form-textarea {
         height: 120px;
         color: var(--navyblue-modal);
@@ -634,27 +638,19 @@ body {
     &__form-checkbox {
         width: 16px;
         height: 16px;
+        border: 1px solid var(--navyblue-modal);
+        border-radius: 2px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         display: inline-flex;
         align-items: center;
         justify-content: center;
         fill: transparent;
-        border: 1px solid var(--navyblue-modal);
-        border-radius: 2px;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    & .icon-check {
-        fill: var(--cloud);
-    }
-
-    &__form-checkbox-hidden:checked + .modal__form-checkbox{
+    &__form-checkbox-hidden:checked + .modal__form-checkbox {
         background-color: var(--ocean);
         border: none;
         fill: var(--cloud);
-    }
-
-    &__form-privacy {
-        color: var(--iris);
     }
 
     &__form-submit {
