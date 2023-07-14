@@ -396,7 +396,7 @@ body {
   letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
-.footer__form-label {
+.footer__form {
   display: flex;
   gap: 24px;
 }
