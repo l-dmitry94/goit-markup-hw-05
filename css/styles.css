@@ -384,6 +384,64 @@ body {
 .footer__socials-link:hover, .footer__socials-link:focus {
   background-color: var(--green);
 }
+.footer__subscribe {
+  margin-left: 80px;
+}
+.footer__subscribe-title {
+  margin-bottom: 16px;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+.footer__form-label {
+  display: flex;
+  gap: 24px;
+}
+.footer__form-input {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--white);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  color: var(--white, #FFF);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  padding-left: 16px;
+}
+.footer__form-input::-moz-placeholder {
+  color: var(--white);
+}
+.footer__form-input::placeholder {
+  color: var(--white);
+}
+.footer__form-button {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white, #FFF);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: none;
+  background-color: var(--iris);
+  border-radius: 4px;
+}
+
+.icon-subscribe {
+  fill: var(--white);
+  margin-left: 16px;
+}
 
 .portfolio {
   padding: 96px 0 120px 0;
@@ -590,13 +648,19 @@ body {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 8px;
 }
-.modal__form-checkbox-hidden:checked + .modal__form-checkbox {
+.modal__form-checkbox-hidden:checked + .modal__form-checkbox-label .modal__form-checkbox {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
 }
+.modal__form-label-link {
+  color: var(--iris);
+}
 .modal__form-submit {
+  min-width: 169px;
+  height: 56px;
   display: block;
   font-size: 16px;
   font-weight: 500;
@@ -608,6 +672,7 @@ body {
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
 }
 
 .is-hidden {
