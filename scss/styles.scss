@@ -418,8 +418,7 @@ body {
         gap: 24px;
     }
 
-    &__form-label { 
-    }
+    &__form-label {}
 
     &__form-input {
         width: 264px;
@@ -678,7 +677,6 @@ body {
 
     &__form-textarea {
         height: 120px;
-        color: var(--navyblue-modal);
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
@@ -689,6 +687,10 @@ body {
         resize: none;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         padding: 8px 16px;
+
+        &::placeholder {
+            color: var(--navyblue-modal);
+        }
 
         &:focus {
             border-color: var(--iris);
